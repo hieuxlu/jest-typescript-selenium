@@ -1,4 +1,4 @@
-# Jest + Selenium
+# Jest + Typescript + Selenium + VSCode
 
 ## Getting started
 
