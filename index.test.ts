@@ -1,12 +1,13 @@
-const { Builder, By, Key, until } = require('selenium-webdriver');
-require('selenium-webdriver/chrome');
-require('selenium-webdriver/firefox');
-require('chromedriver');
-require('geckodriver');
-const { querySelector } = require('./helpers');
+import { Builder, WebDriver } from 'selenium-webdriver';
+import 'selenium-webdriver/chrome';
+import 'selenium-webdriver/firefox';
+import 'chromedriver';
+import 'geckodriver';
+
+import { querySelector } from './helpers';
 
 const rootURL = 'https://www.mozilla.org/en-US/';
-let driver;
+let driver: WebDriver;
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 1000 * 60 * 5;
 
 beforeAll(async () => {
